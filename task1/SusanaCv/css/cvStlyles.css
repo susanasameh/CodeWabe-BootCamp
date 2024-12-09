@@ -1,0 +1,37 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    gap: 10px;
+    border-radius: 20px;
+        background: linear-gradient(45deg, #f3ebeb, #fff2f2);
+        box-shadow: 9px -9px 7px #989191,
+            -9px 9px 7px #ffffff;
+            padding: 3%;
+}
+
+.profile-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 10px;
+   
+}
+
+.font-icon{
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+}
