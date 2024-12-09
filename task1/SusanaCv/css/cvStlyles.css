@@ -1,3 +1,11 @@
+body{
+    padding: 2%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
 header{
     display: flex;
     align-items: center;
@@ -34,4 +42,40 @@ a {
     width: 30px;
     height: 30px;
     margin: 3px;
+}
+.skills-img{
+   display: flex;
+   justify-content: space-around;
+
+}
+.skills-img img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.skills{
+    display: flex;
+    justify-content: space-around;
+}
+.section-projects{
+    display: flex;
+   flex-direction: column;
+align-items: center;
+   width: 60%;
+   margin: 0 auto;
+    
+}
+
+.section-projects img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    
+}
+footer{
+    color: #ffffff;
+    background-color: black;
+    text-align: center;
+  position: sticky;
+  bottom: 0%;
 }
