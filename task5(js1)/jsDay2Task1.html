@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsDay2Task1</title>
+    <link rel="stylesheet" href="./css/jsDay2Task1.css">
+</head>
+<body>
+   
+    <div id="container">
+        
+         <!-- 1- Write a program to enter two numbers and perform all arithmetic operators -- -->
+              <div id="calculator" class="question">
+                   <div id="cal-input">
+                    <input type="text" id="display" readonly>
+                   </div>
+                    <div class="row">
+                        <button id="operator" class="btn operator">c</button>
+                        <button id="operator" class="btn operator">+</button>
+                        <button id="operator" class="btn operator">-</button>
+                        <button id="operator" class="btn operator">*</button>
+                        <button id="operator" class="btn operator">/</button>
+                        <button id="operator" class="btn operator">%</button>
+                        <button id="equals" class="btn operator">=</button>
+                    </div>
+                    <div class="row">
+                        <button id="nu7" class="btn operand">7</button>
+                        <button id="nu8" class="btn operand">8</button>
+                        <button id="nu9" class="btn operand">9</button>
+                        
+                    </div>
+                    <div class="row">
+                        <button id="nu4" class="btn operand">4</button>
+                        <button id="nu5" class="btn operand">5</button>
+                        <button id="nu6" class="btn operand">6</button>
+                        
+                    </div>
+                    <div class="row">
+                    <button id="nu1" class="btn operand">1</button>
+                    <button id="nu2" class="btn operand">2</button>
+                    <button id="nu3" class="btn operand">3</button>
+                                    
+                  </div>
+                  <div class="row">
+                    <button id="num0" class="btn operand">0</button>
+                    <button id="decimal" class="btn operand">.</button>
+                  </div>
+
+                 
+                    </div>
+
+
+
+         <!-- 2- Write a program to enter length and breadth of a rectangle and find it’s area . (Area=length*width) -->
+        
+
+            <div id="question-2" class="question">
+                Length: <input type="number" id="length" placeholder="Please Enter The Length"><br>
+                Width: <input type="number" id="width" placeholder="Please Enter The Width"><br>
+                <div class="button-section">
+                <button class="calculate-2" onclick="calculateArea()">Calculate The Area</button>
+                <button class="calculate-2" onclick="calculatePerimeter()">Calculate The perimeter</button>
+                <button class="calculate-2" onclick="calculateRectangle()">Calculate The Rectangle</button>
+                    </div>
+
+                <p id="result-1"></p>
+                <p id="result-2"></p>
+
+               
+                </div>
+
+                <!-- 3- Write a program to enter radius of a circle and find its diameter ,circumference and area.
+                -Diameter =2*radius | -Circumference =2*3.14*radius | -Area=3.14*(radius*radius)
+                Example
+                Input 10
+                Output Diameter=20 ,Circumference=62.97 ,Area=314 -->
+                <div id="question-3" class="question">
+                    Radius: <input type="number" id="radius" placeholder="Please Enter The Radius">
+                    <div class="button-section">
+                        <button id="calculateCircle" class="calculate-2" onclick="calculateCircle()">Calculate The Circle</button>
+
+                    </div>
+                    <p id="result-5"></p>
+                    <p id="result-3"></p>
+                    <p id="result-4"></p>
+
+
+                </div>
+
+
+            
+                </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="./js/jsDay2Task1.js"></script>
+</body>
+</html>
