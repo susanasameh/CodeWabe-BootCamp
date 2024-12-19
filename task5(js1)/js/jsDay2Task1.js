@@ -170,7 +170,7 @@ function clearInputs(){
 
 function calculateCircle() {
    calculateDiameter();
-   calculateArea();
+   calculateCircleArea();
    calculateCircumference();
    clearInputs();
 
@@ -181,10 +181,10 @@ function calculateDiameter() {
    document.getElementById("result-5").textContent = `Diameter = ${diameter}`;
 }
 
-function calculateArea() {
+function calculateCircleArea() {
    const radius = parseFloat(document.getElementById("radius").value);
-   const area = Math.PI * (radius ** 2);
-   document.getElementById("result-3").textContent = `Area = ${area}`;
+   const circleArea = Math.PI * (radius ** 2);
+   document.getElementById("result-3").textContent = `Area = ${circleArea}`;
 
 }
 
