@@ -1,0 +1,29 @@
+table{
+    border-collapse: collapse;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    background-color: lightcoral;
+    margin: auto;
+}
+thead{
+    background-color: lightgray;
+    border : none;
+    font-size: 20px;
+    height: 40px;
+}
+
+tbody th, td{
+    border: 1px solid black;
+    padding: 5px;
+    height: 30px;
+    font-size: 18px;
+}
+.name{
+    background-color: lightgreen;
+    width:65%;
+}
+.age{
+    background-color: lightblue;
+    width:35%;
+}
