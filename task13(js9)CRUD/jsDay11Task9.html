@@ -4,12 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jsDay11Task9</title>
-    <link rel="stylesheet" href="" class="">
+    <link rel="stylesheet" href="./css/jsDay11Task9.css" class="">
 </head>
 <body>
-    <div class="container">
-      
+    <section class="container">
+        <h1>Create, Read, Update, Delete (CRUD)</h1>
+        <hr>
+        <div class="crud-page">
+        
+        <table id="crud-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>                
+            </thead>
+
+            <tbody id="tbody">
+            
+            </tbody>
+        </table>
+        
+        
+        <form action="" method=""class="create">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <label for="category">Category</label>
+            <input type="text" name="category" id="category" placeholder="Category">
+            <label for="price">Price</label>
+            <input type="text" name="price" id="price" placeholder="Price">
+        <button type="button" id="create-btn" onclick="addProduct()">Create</button>
+        <button type="button" id="update-btn" style="display: none;" onclick="updateProduct()">Update</button>
+        <button type="button" id="cancel-btn" style="display: none;" onclick="cancelUpdate()">Cancel</button>
+
+            
+            
+        </form>
+
     </div>
+    </section>
+  
   
 
 
