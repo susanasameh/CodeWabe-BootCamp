@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: white;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100vw;
+    height: 48vh;
+    margin-bottom: 40px;
+   
+}
+
+.top-nav{
+    background-color: #032541;
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+        /* margin: auto; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+   
+}
+.div-logo{
+    width:40%;
+    height: 100%;
+}
+.div-list{
+    width: 60%; 
+    height: 100%;
+}
+
+.nav-logo{
+    width: 30%;
+    height: 100%;
+    /* margin-left: -60%; */
+
+}
+.nav-menu-list{
+
+    width: 80%;
+    height: 100%;
+    display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        
+}
+.nav-item {
+
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 700;
+    /* margin-left: 2%; */
+    /* padding: 10px; */
+
+
+}
+.header-img{
+    background-image: url("../images/hederImg.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+   
+
+    }
+    .layer-2{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom right, rgba(32, 32, 32, 0.775), rgba(32, 32, 32, 0.573));
+      
+   
+    }
+    #searchForm{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-input{
+        width: 70%;
+        padding: 20px;
+        border-radius: 5px;
+        /* outline: #032541; */
+        font-size: 20px;
+        height: 15%;
+        margin :5% 15% 3px auto; 
+        color: #032541;
+    }
+    .search-input:hover{
+        border: 2px solid #032541;
+        font-size: 22px;
+        transition: 0.3s;
+        color: #032541;
+    }
+    .search-btn{
+        width: auto;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #032541;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+       margin-top: 10px;
+    }
+    .search-btn:hover{
+        background-color: #23B9D4;
+        color: #000000;
+        font-size: 22px;
+        transition: 0.3s;
+    }
+   
+   /* Scrollable section styles */
+   .scrollable-section {
+   
+    margin-top: 65px;
+       overflow-x: auto;
+       white-space: nowrap;
+       scrollbar-width: thin;
+       scroll-behavior: smooth;
+     
+   }
+
+
+   #searchResult {
+       width: auto;
+    background-color: #032541;
+       display: inline-flex;
+       /* Ensure movie cards are displayed in a single row */
+       gap: 15px;
+       /* Add space between movie cards */
+       overflow-x: auto;
+   }
+   #searchResult .cart-container {
+       width: 100%;
+       background-color: rgb(11, 11, 11);
+       border-radius: 10px;
+   }
+
+        #searchResult .movie-overview{
+     
+                
+                text-align: center;
+                /* Align text to the left */
+                white-space: normal;
+                /* Allow text to wrap normally */
+                overflow: hidden;
+                /* Hide any overflowing text */
+                text-overflow: ellipsis;
+           
+               
+        }
+       
+    .movie-container{
+        width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            /* background-color: blue; */
+            gap:10px;
+    }
+.cart-container{
+    width: 15%;
+    height: 300px;
+    background-color: rgb(11, 11, 11);
+    
+    margin: 20px 10px;
+    /* border-radius: 10px; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+          
+   
+  
+}
+.cart-img{
+    width: 100%;
+    height: 80%;
+    object-fit: fit;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* position: relative;
+    top: -5%; */
+}
+.movie-title{
+    font-size: 15px;
+    color: wheat;
+    text-align: center;
+    margin: 3px 0px;
+    /* background-color: white; */
+}
+.movie-desc{
+    color: #032541;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+}
+.movie-overview{
+    font-size: 13px;
+    display : none;
+    height : 50%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.895);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.119);
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.37);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    bottom:0%;
+    transition: 3s ease-in-out;
+    text-align: center;
+    padding: 10px 3px 5px 3px;
+    color: #000;
+    line-height: 17px;
+    
+   
+}
+
+.cart-container:hover .movie-overview{
+    display: block;
+}

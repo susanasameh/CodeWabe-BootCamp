@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show movies</title>
+    <link rel="stylesheet" href="./css/api.css">
+</head>
+<body>
+   <header>
+    <nav class="top-nav">
+        <div class="div-logo">
+        <img src="./images/logo.svg" alt="" class="nav-logo">
+        </div>
+        <div class="div-list">
+        <ul class="nav-menu-list">
+            <li class="nav-item">Movies</li>
+            <li class="nav-item">TV-Shows</li> 
+            <li class="nav-item">People</li> 
+            <li class="nav-item">More</li>
+
+        </ul>
+        </div>
+        </div>
+        
+        
+    </nav>
+    <div class="header-img">
+        <div class="layer-2">
+                <form id="searchForm" action="" method="get">
+                     <input type="text" name="search" id="search" class="search-input" onkeyup="" aria-placeholder="Search for movies, tv shows, people" placeholder="Search for movies, tv shows, people">
+                        <button class="search-btn">SEARCH</button>
+                </form>
+                
+        </div>
+
+    </div>
+   </header>
+<section class="scrollable-section">
+    <div id="searchResult" class="d-flex"></div>
+</section>
+
+
+    <main>
+        <div class="movie-container" id="movieContainer">
+           
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- <script src="./js/api.js"></script> -->
+    <script src="./js/moviesApi.js"></script>
+</body>
+</html>
