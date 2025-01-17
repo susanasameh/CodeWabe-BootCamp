@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* color: white; */
+    font-family: sans-serif;
+}
+
+header{
+    width: 100vw;
+    height: 48vh;
+    margin-bottom: 40px;
+        color: rgb(0, 0, 0);
+   
+}
+
+.top-nav{
+    margin:1%;
+    background-color: #0645d839;
+    color: rgb(0, 0, 0);
+    width: 98%;
+    height: auto;
+    padding: 10px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+         top :0%;
+        z-index:999;
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.div-logo{
+    width:30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+        color: rgb(0, 0, 0);
+    /* justify-content: center; */
+    align-items: center;
+    gap:5px
+}
+.logo-img{
+    width: 40px;
+    height: 40px;
+
+}
+.logo-text{
+
+    height: 100%;
+    text-align: center;
+        color: rgb(0, 0, 0);
+}
+.logo-text h1{
+    font-size: 1.2rem;
+    margin: 0px;
+}
+.logo-text p{
+    font-size: 0.7rem;
+    margin: 0px;
+}
+.div-list{
+    margin-left: 20px;
+    padding-right: 50px;
+    height: 100%;
+    justify-content: flex-end;
+        align-items: center;
+        width: auto;
+}
+
+.nav-logo{
+    width: 100%;
+    height: 100%;
+        color: rgb(0, 0, 0);
+    /* padding-left: 20px; */
+    /* margin-left: -60%; */
+
+}
+.nav-menu-list{
+    margin: 0px;
+    padding: 0px;
+
+    height: 100%;
+    display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: clamp(20px, 0.7vw, 2rem);
+        color: rgb(0, 0, 0);
+        
+}
+.nav-item {
+
+    list-style: none;
+    text-decoration: none;
+    font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+    cursor: pointer;
+    font-weight: 700;
+        color: rgb(0, 0, 0);
+        margin-right: clamp(5px, 0.7vw, 200px);
+    /* margin-left: 2%; */
+    /* padding: 10px; */
+
+
+}
+
+.nav-item:hover{
+    color: #F6961E;
+    font-weight: 900;
+}
+.header-img{
+    /* margin-top: 10px; */
+    background-image: url("../images/canada-retail-sales-advertising-logo-design.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+   
+
+    }
+    .layer-2{
+        width: 100%;
+        height: 100%;
+        /* background: linear-gradient(to bottom right, rgba(32, 32, 32, 0.775), rgba(239, 237, 237, 0.792)); */
+      
+   
+    }
+    #searchForm{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-input{
+        width: 70%;
+        padding: 20px;
+        border-radius: 5px;
+        /* outline: #032541; */
+        font-size: 20px;
+        height: 15%;
+        margin :300px 15% 3px auto; 
+        color: #032541;
+    }
+    .search-input:hover{
+        border: 2px solid #032541;
+        font-size: 22px;
+        transition: 0.3s;
+        color: #032541;
+    }
+    .search-btn{
+        width: auto;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #032541;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+       margin-top: 10px;
+    }
+    .search-btn:hover{
+        background-color: #F6961E;
+        color: #000000;
+        font-size: 22px;
+        transition: 0.3s;
+    }
+   
+   /* Scrollable section styles */
+   .scrollable-section {
+   
+    margin-top: 65px;
+       overflow-x: auto;
+       white-space: nowrap;
+       scrollbar-width: thin;
+       scroll-behavior: smooth;
+     
+   }
+
+
+   #searchResult {
+       width: auto;
+    background-color: #032541;
+       display: inline-flex;
+       /* Ensure movie cards are displayed in a single row */
+       gap: 15px;
+       /* Add space between movie cards */
+       overflow-x: auto;
+   }
+   #searchResult .cart-container {
+       width: 100%;
+       background-color: rgb(11, 11, 11);
+       border-radius: 10px;
+   }
+
+        #searchResult .movie-overview{
+     
+                
+                text-align: center;
+                /* Align text to the left */
+                white-space: normal;
+                /* Allow text to wrap normally */
+                overflow: hidden;
+                /* Hide any overflowing text */
+                text-overflow: ellipsis;
+           
+               
+        }
+
+        .main-page{
+            /* background-color: #032541; */
+            width: 100%;
+            margin-top: 5.2%;
+            
+            /* height: auto; */
+            display: flex;
+            flex-direction: row;
+            /* position: fixed;
+            top :0% */
+        }
+        .toggle-width{
+            background-color: #F6961E;
+            width: 100%;
+            height: 5%;
+            position: fixed;
+            top :0%
+        }
+        .side-nav{
+            background-color: #0645d839;
+            width: 5%;
+            height: 80vh;
+            max-height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            /* padding: 5px; */
+            gap: 10px;
+            position: fixed;
+            top :10%;
+
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+            
+            
+        }
+        .side-nav:hover{
+            width: auto;
+        }
+                .container {
+                    display: block;
+                    position: relative;
+                    padding-left: 35px;
+                    margin-bottom: 12px;
+                    cursor: pointer;
+                    font-size: 22px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                }
+        
+                /* Hide the browser's default checkbox */
+                .container input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+                }
+        
+                /* Create a custom checkbox */
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 25px;
+                    width: 25px;
+                    background-color: #eee;
+                }
+        
+                /* On mouse-over, add a grey background color */
+                .container:hover input~.checkmark {
+                    background-color: #ccc;
+                }
+        
+                /* When the checkbox is checked, add a blue background */
+                .container input:checked~.checkmark {
+                    background-color: #2196F3;
+                }
+        
+                /* Create the checkmark/indicator (hidden when not checked) */
+                .checkmark:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+        
+                /* Show the checkmark when checked */
+                .container input:checked~.checkmark:after {
+                    display: block;
+                }
+        
+                /* Style the checkmark/indicator */
+                .container .checkmark:after {
+                    left: 9px;
+                    top: 5px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid white;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                       
+                }
+        .title{
+            margin: 5px;
+            color: rgb(255, 255, 255);
+            padding-left:20px;
+            display: none;
+        }
+        .category-title{
+            margin-top: 50px;
+        }
+        .checked-list{
+            margin-bottom: 50px;
+            /* display: flex; */
+            flex-direction: column;
+            color: rgb(255, 255, 255);
+            padding:0 20px;
+            display: none;
+        }
+
+        .side-nav:hover .title{
+            display: block;
+        }
+        .side-nav:hover .checked-list{
+            display: flex;
+            gap:10px;
+        }
+      
+            
+       
+    .products-container{
+        width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            gap:20px;
+            margin: 40px auto;
+            padding-left: 70px;
+    }
+.cart-container{
+    width: 250px;
+    height: 300px;
+    background-color: #0645d839;   
+    margin: 20px 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    
+          
+   
+  
+}
+.cart-img{
+    width: 100%;
+    height: 65%;
+    object-fit: fit;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.product-title{
+    font-size: 15px;
+    color: #010101;
+    text-align: center;
+    margin: 3px 0px;
+    /* background-color: white; */
+}
+.product-price{
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    color: #0645d8;
+}
+.product-desc{
+    color: #032541;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+}
+.product-overview{
+    font-size: 13px;
+    display : none;
+    height : 50%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.895);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.119);
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.37);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    bottom:0%;
+    transition: 3s ease-in-out;
+    text-align: center;
+    padding: 10px 3px 5px 3px;
+    color: #000;
+    line-height: 17px;
+    
+   
+}
+
+.cart-container:hover .product-overview{
+    display: block;
+}
+#sortSelect{
+    color: #000;
+}
+option{
+    font-size: 12px;
+    color: #000;
+}

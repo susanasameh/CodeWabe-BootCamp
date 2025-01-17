@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppy for shopping</title>
+    <link rel="stylesheet" href="./css/ecommerceApi.css">
+</head>
+<body>
+   <header>
+    <nav class="top-nav" id="topNav">
+        <div class="div-logo">
+            <div class="logo-img">
+                <img src="./images/uplinkly-sticky-cart-9-10-best-add-to-cart-apps-in-shopify-swipecart-blog-28-04-23.png" alt="" class="nav-logo">
+            </div>
+            <div class="logo-text">
+                 <h1>Shoppy</h1>
+       <p>love to buy</p>
+            </div>
+      
+        </div>
+        <div class="div-list">
+        <ul class="nav-menu-list">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item">Products</li>
+            <li class="nav-item">Categories</li> 
+            <li class="nav-item">Contact</li> 
+            
+
+        </ul>
+        </div>
+        </div>
+        
+        
+    </nav>
+    <div class="header-img">
+        <div class="layer-2">
+                <form id="searchForm" action="" method="get">
+                     <input type="text" name="search" id="search" class="search-input" onkeyup="" aria-placeholder="Search for movies, tv shows, people" placeholder="Search for movies, tv shows, people">
+                        <button class="search-btn">SEARCH</button>
+                </form>
+                
+        </div>
+
+    </div>
+   </header>
+<!-- <section class="scrollable-section">
+    <div id="searchResult" class="d-flex"></div>
+</section> -->
+
+
+    <main class="main-page">
+        <div class="side-nav" id="sideNav">
+                    <button class="toggle-width">×</button>
+
+            <h2 class="title category-title" >Categories</h2>
+            <div class="checked-list" id="checkedList">
+              
+            </div>
+               
+
+            <h2 class="title">Price</h2>
+            <div class="checked-list"  id="checkedList">
+                
+                 <label  class="checkbox-container">
+                <input type="checkbox"  value="default" class="price-checkbox"> Default
+
+            </label>
+            <label  class="checkbox-container">
+                <input type="checkbox" value="asc" class="price-checkbox">Ascending
+            </label>
+            <label  class="checkbox-container">
+                <input type="checkbox" value="desc" class="price-checkbox">Descending
+            </label>
+            </div>
+           
+        </div>
+        <div class="products-container" id="productsContainer">
+        </div>
+    </main>
+
+
+
+    <script>
+      function handleMainWidth(expand) {
+            const sideNav = document.getElementById("sideNav");
+            const productsContainer = document.getElementById("productsContainer");
+            const topNav = document.getElementById("topNav");
+
+            if (expand) {
+                // Expand sideNav
+                sideNav.style.width = "auto";
+                productsContainer.style.width = "89%";
+                topNav.style.display = "none";
+
+            } else {
+                // Collapse sideNav
+                sideNav.style.width = "3%";
+                productsContainer.style.width = "97%";
+                topNav.style.display = "flex";
+            }
+        }
+
+        // Add event listeners for hover
+        const sideNav = document.getElementById("sideNav");
+
+        sideNav.addEventListener("mouseenter", () => handleMainWidth(true)); // Expand on hover
+        sideNav.addEventListener("mouseleave", () => handleMainWidth(false)); // Collapse when hover ends
+
+        // Add smooth transitions for a better experience
+        sideNav.style.transition = "width 0.3s ease";
+        document.getElementById("productsContainer").style.transition = "width 0.3s ease";
+
+    </script>
+    <script src="./js/ecommerceApi.js"></script>
+</body>
+</html>
