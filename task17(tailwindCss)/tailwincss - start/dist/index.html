@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind css tuts | Korsat X Parmaga</title>
+
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="text-gray-300 bg-gray-900 font-popinsFont">
+    <div class="main-container px-5 grid grid-cols-9">
+        <div class="navigation text-left pt-3 col-span-3 md:col-span-2">
+            <div class="title text-left  md:text-2xl font-bold p-5 border-b border-gray-600 text-secondary-100">GAMERS <span class="text-secondary-200">
+                Vs
+            </span> CHALLENGES</div>
+
+            <div class="links">
+                <div class="link flex justify-start item-center px-5 py-3 border-r-2 bg-gray-500 bg-opacity-25 transition ease-out duration-200">
+                   <div class="icon mr-2 text-xl text-yellow-500"><i class='bx bxs-home '></i></div>
+                    <div class="text font-semibold text-grey-50">Home</div>
+                    
+                </div>
+
+                <div class="link flex justify-start items-center px-5 py-3 hover:bg-gray-500 hover:bg-opacity-25 transition ease-out duration-200">
+                    <div class="icon mr-2 text-xl text-yellow-500"><i class='bx bxs-help-circle'></i></div>
+                    <div class="text">About</div>
+                    
+                </div>
+
+                <div class="link flex justify-start px-5 py-3 hover:bg-gray-500 hover:bg-opacity-25 transition ease-out duration-200">
+                    <div class="icon mr-2 text-xl text-yellow-500"><i class='bx bxs-envelope'></i></div>
+                    <div class="text">Contact</div>
+                </div>
+            </div>
+        </div>
+        <main class="col-span-6 pt-5 pl-5 md:col-span-7">
+            <header class="flex justify-end md:justify-between items-center">
+            <div class="title hidden md:block">
+                <div class="main-title text-6xl font-bold">Games</div>
+                <div class="sub-title text-3xl font-semibold text-green-500">For Gamers</div>
+            </div>
+
+            <div class="user flex justify-end gap-5">
+                <div class=" btn login font-semibold text-primary hover:bg-primary hover:text-white transition ease-out duration-200">Log in</div>
+                <div class="btn signup font-semibold text-primary hover:bg-primary hover:text-white transition ease-out duration-200">Sign up</div>
+            </div>
+        </header>
+
+        <div class="games ">
+            <section class="pt-7">
+                <div class="title font-bold text-3xl text-yellow-500 py-5 border-b-2 border-yellow-500 mb-5">Latest Games</div>
+                <div class="cards md:grid grid-cols-2 lg:grid-cols-3 gap-5 ">
+                    <div class="card">
+                        <div class="image h-full w-full"><img src="img/assassins-creed-mirage.jpg" class="h-full w-full object-cover"></div>
+                        <div class="title">
+                            <div class="main-title font-bold">Assassin's Creed Mirage</div>
+                            <div class="sub-title">Developers: Ubisoft</div>
+                        </div>
+                        <div class="badge">
+                            <span class="icon"><i class='bx bxs-star'></i></span>
+                             <span class="icon">4.5/5</span>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image h-full w-full"><img src="img/Alister Disney character.png" class="h-full w-full object-cover"></div>
+                        <div class="title">
+                            <div class="main-title font-bold">Assassin's Creed Mirage</div>
+                            <div class="sub-title">Developers: Ubisoft</div>
+                        </div>
+                        <div class="badge">
+                            <span class="icon"><i class='bx bxs-star'></i></span>
+                            <span class="icon">4.5/5</span>
+                    
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image h-full w-full"><img src="img/59621-vector-superman-kent-clark-cartoon-png-free-photo-removebg-preview.png" class="h-full w-full object-cover"></div>
+                        <div class="title">
+                            <div class="main-title font-bold">Assassin's Creed Mirage</div>
+                            <div class="sub-title">Developers: Ubisoft</div>
+                        </div>
+                        <div class="badge">
+                            <span class="icon"><i class='bx bxs-star'></i></span>
+                            <span class="icon">4.5/5</span>
+                    
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pt-7">
+                <div class="title font-bold text-3xl text-yellow-500 py-5 border-b-2 border-yellow-500 mb-5">Most Popular</div>
+                <!-- <div class="cards">
+                    <div class="card">
+                        <div class="image"></div>
+                        <div class="title">
+                            <div class="main-title"></div>
+                            <div class="sub-title"></div>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+
+            <div class="load-more font-semibold text-xl text-gray-900 bg-secondary-200 flex justify-center py-2">
+                <a href="http://" class="hover:text-white hover:text-2xl transition ease-out duration-200">Load More</a>
+            </div>
+        </div>
+        </main>
+        
+
+    </div>
+
+</body>
+
+</html>
