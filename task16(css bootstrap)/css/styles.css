@@ -1,0 +1,72 @@
+.side-nav{
+    height: 100vh;
+    padding: 10px 20px;
+}
+.main{
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 10px 30px;
+   
+}
+.navbar{
+
+ width: 74.00%;
+ height: 10vh;
+ position: fixed;
+ top:0%;
+ right:0%;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+    align-self: flex-end;
+}
+.input-group-text{
+    background-color: #4d7af7;
+}
+.icon{
+    margin-right: 20px;
+    
+    }
+.badge{
+    transform: translate(50%, -50%) !important;
+}
+.badge2{
+    color: #f5f5f5;
+}
+.nav-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.sideNav-img{
+    width: 30px;
+    height: 30px;
+}
+.sideNav-title{
+    display: flex;
+    font-size: 100%;
+    gap:10px;
+    color: white;
+}
+.sideNav-menu{
+    margin-top: 70px;
+    font-size:110%;
+    color: white;
+}
+.fa-solid{
+   margin-right: 10px;
+}
+.table{
+    background-color: chartreuse;
+}
+.main{
+   
+    
+}
+.main-table{
+    width: 100%;
+    background-color: azure;
+    height: 90vh;
+    margin-top: 10vh;
+}
